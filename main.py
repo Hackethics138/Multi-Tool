@@ -75,7 +75,7 @@ any misuse of this toolkit !
         
 def iptrack():
     os.system("clear")
-    track_ip_address(ip_address):
+    track_ip_address():
     url = f"http://ip-api.com/json/{ip_address}"
     response = requests.get(url)
     data = response.json()
