@@ -39,12 +39,11 @@ ____________________________________________________
 
 def about():
     os.system("clear")
-    print(logo)
     print(f"""
 {bcyan}[-]This tool is Created By Cyber Army
 
-{yellow}Author    :  Cyber DK
-Github    :  https://github.com/DK1285
+{yellow}Author    :  Hackethics
+Github    :  https://github.com/Hackethics138
 Version   :  1.0
 
 {red}[-]Warning:
@@ -55,16 +54,16 @@ any misuse of this toolkit !
 
 
 {bgreen}[-]Developer SocialMedia
-{red}[{byellow}1{red}]{white}-{red}>{bcyan}DK   : Instagram
-{red}[{byellow}2{red}]{white}-{red}>{bcyan}DK   : Telegram
+{red}[{byellow}1{red}]{white}-{red}>{bcyan}Hackethics   : Instagram
+{red}[{byellow}2{red}]{white}-{red}>{bcyan}Hackethics   : Telegram
 {red}[{byellow}0{red}]{white}-{red}>{bcyan}Exit
 """)
     option=input(f"{bred}Choose an option:{white}")
     try:
         if option=="1":
-            os.system("xdg-open https://www.instagram.com/sincrypt_dk/ > /dev/null 2>&1 &")
+            os.system("xdg-open https://www.instagram.com/hackethics138/ > /dev/null 2>&1 &")
         elif option=="2":
-            os.system("xdg-open https://t.me/cyber_dk/ > /dev/null 2>&1 &")
+            os.system("xdg-open https://t.me/hackethics138/ > /dev/null 2>&1 &")
         elif option=="0":
             logic()
         else:
@@ -77,7 +76,6 @@ def iptrack():
     os.system('python iptrack.py' if name=='nt' else 'python3 iptrack.py')
 def logic():
     os.system("clear")
-    print(logo)
     print(meanu)
     option=input(f"{bred}Choose an option:{white}")
     try:
