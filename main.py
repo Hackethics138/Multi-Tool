@@ -74,8 +74,6 @@ any misuse of this toolkit !
         print(f"{red}SomeThing Went Wrong...")
         
 def iptrack():
-    os.system("clear")
-    track_ip_address()
     url = f"http://ip-api.com/json/{ip_address}"
     response = requests.get(url)
     data = response.json()
@@ -90,7 +88,6 @@ def iptrack():
 
 
 ip_address = input("Enter your ip:") 
-track_ip_address(ip_address)
 
 def logic():
     os.system("clear")
