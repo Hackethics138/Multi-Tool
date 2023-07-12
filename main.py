@@ -151,6 +151,7 @@ def boomber():
     logic()
 
 def iptrack():
+    ip_address = input("Enter your ip:") 
     track_ip_address(ip_address)
     url = f"http://ip-api.com/json/{ip_address}"
     response = requests.get(url)
@@ -163,11 +164,6 @@ def iptrack():
         print("ISP: ", data['isp'])
     else:
         print("Failed to track IP address.")
-
-
-ip_address = input("Enter your ip:") 
-track_ip_address(ip_address)
-
 
 if __name__=="__main__":
     try:
