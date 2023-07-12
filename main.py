@@ -72,8 +72,10 @@ any misuse of this toolkit !
             about()
     except:
         print(f"{red}SomeThing Went Wrong...")
-
-def track_ip_address(ip_address):
+        
+def iptrack():
+    os.system("clear")
+    track_ip_address(ip_address):
     url = f"http://ip-api.com/json/{ip_address}"
     response = requests.get(url)
     data = response.json()
@@ -100,7 +102,7 @@ def logic():
         elif option=="2":
             about()
         elif option=="3":
-            track_ip_address(ip_address):
+            iptrack():
         elif option=="4":
             os.system("clear")
             print(f"{bgreen}Thank You For Using...")
